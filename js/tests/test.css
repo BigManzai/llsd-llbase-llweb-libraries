@@ -1,0 +1,28 @@
+
+.test_set 
+{
+    border: 1px solid black;
+    margin: 4px;
+    padding: 4px;
+    font-family: Sans-Serif;
+}
+
+.test_title
+{
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.test_summary
+{
+}
+
+.test_failure
+{
+    background-color: #ff0000;
+}
+
+.test_success
+{
+    background-color: #80ff00;
+}

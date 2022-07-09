@@ -1,0 +1,98 @@
+C++ LLSD Library
+----------------
+    v1 - 2010-06-07 - Zero Linden (Mark Lentczner)
+
+
+ABOUT
+=====
+This library implements the LLSD data type, and serialization forms in C++.
+
+To see how to use the data type, read doc comments in:
+    indra/llcommon/llsd.h
+
+To see how to serialize and deserialize LLSD, read doc comments in:
+    indra/llcommon/llsdserialize.h
+
+The LLIDL implementation here is really only a very early skeleton. It doesn't
+implement LLIDL yet, but shows the approximate direction of how to build such
+a facility in C++.
+
+
+DEPENDENCIES
+============
+Two commonly available libraries are required for this to build:    
+    APR:   http://apr.apache.org/
+    expat: http://expat.sourceforge.net/
+
+Both are pre-installed on Mac OS X and most Linux distributions.
+
+On Windows you will need to download and install both. The project is set up
+for APR built as static libs and expat built as dynamic. These are the default
+configurations of those libraries out-of-the-box for Windows. The TestLLSD
+project settings will need to be updated for where you places those libraries on your machine.
+
+For getting and building APR, see the very helpful:
+    http://apr.apache.org/compiling_win32.html
+     
+For expat, this code was developed using the expat_win32 pre-built version
+
+
+BUILDING
+========
+The library and unit tests can be built in three different development
+environments:
+
+** Linux / Gnu Make **
+There is a Gnu Make Makefile in this directory:
+    Makefile
+
+Just type 'make' at the shell. Build is non-legacy by default, see Makefile
+for details.
+
+** Mac OS X / Xcode **
+Open this project file:
+    Build-Xcode/TestLLSD.xcodeproj
+
+There are three targets: Debug / Release / Legacy
+
+** Windows / Visual Studio 2008 **
+Open this solution file:
+    Build-VS2008/TestLLSD.sln
+
+There are two targets: Debug / Release
+Both are legacy builds by default
+
+
+NOTES
+=====
+None of the provided build projects actually build the code as a stand-alone
+library: They just build it all as part of the test application. However, it
+should be trivial to adapt this to your projects' needs. Only these headers
+should be considered public:
+    indra/llcommon/llidl.h
+    indra/llcommon/llsd.h
+    indra/llcommon/llsdserialize.h
+    indra/llcommon/stdtypes.h
+    indra/llcommon/stub.h
+
+The module stub.h/.cpp implement storage of LLSD's Data, URI and UUID types.
+You should be able to replace them easily with your own projects equivalent
+classes that provide more functionality if you need it. The only direct
+reference to these types is in llsd.h. All other code here uses the typedefs
+for the LLSD types established in that file. The stub.h essentially documents
+the minimum functionality that LLSD needs from these classes.
+
+Library can be built to support various legacy aspects of LLSD. Some of these
+are needed to fully interoperate with Second Life's deployed implementation. To
+enable these extras, compile with this #define:
+    LL_LEGACY
+
+Code is based on primarily POSIX / "Single UNIX Specification" interfaces. It
+should be built with this #define:
+    _POSIX_C_SOURCE
+    
+Windows builds will need to have this #define set:
+    LL_WINDOWS
+
+The provided build projects all set these defines appropriately.
+

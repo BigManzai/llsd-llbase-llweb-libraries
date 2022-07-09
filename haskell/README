@@ -1,0 +1,34 @@
+Haskell LLSD & LLIDL library
+----------------------------
+    v1 - 2010-06-07 - Zero Linden (Mark Lentczner)
+
+
+ABOUT
+=====
+LLSD is defined in draft-hamrick-vwrap-type-system-00. It is a structured data
+system used for interchange. See the draft for more details:
+
+    http://tools.ietf.org/html/draft-hamrick-vwrap-type-system-00
+
+This implementation handles XML and Binary serialization, and a full LLIDL
+parser and checker.
+
+To see the interface, consult:
+    Network/Format/LLSD.hs
+    Network/Format/LLSD/LLIDL.hs
+    
+
+BUILDING
+========
+Build with cabal:
+
+    cabal configure -ftest
+    cabal build
+
+EXECUTABLES
+===========
+There are two executables included (assuming you use -ftest):
+
+    llsdutil -- converts between serializations
+    testllsd -- unit tests and simple data generator / consumer for timing tests
+

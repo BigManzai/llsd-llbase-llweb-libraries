@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		033DB96E11CB0D7700F919AD /* llsdserialize_json.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 033DB96D11CB0D7700F919AD /* llsdserialize_json.cpp */; };
+		FD088DAA11821F5D00B294F7 /* llidl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD088D8411821F5C00B294F7 /* llidl.cpp */; };
+		FD088DAC11821F5D00B294F7 /* llsd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD088D8A11821F5C00B294F7 /* llsd.cpp */; };
+		FD088DAE11821F5D00B294F7 /* llsdserialize_xml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD088D8E11821F5C00B294F7 /* llsdserialize_xml.cpp */; };
+		FD088DB111821F5D00B294F7 /* llidl_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD088D9611821F5C00B294F7 /* llidl_tests.cpp */; };
+		FD088DB211821F5D00B294F7 /* llsd_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD088D9711821F5C00B294F7 /* llsd_tests.cpp */; };
+		FD088DB311821F5D00B294F7 /* lltut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD088D9A11821F5C00B294F7 /* lltut.cpp */; };
+		FD088DB411821F5D00B294F7 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD088D9C11821F5C00B294F7 /* test.cpp */; };
+		FD088DC9118220A900B294F7 /* libapr-1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FD088DC8118220A900B294F7 /* libapr-1.dylib */; };
+		FD088E0A1182263A00B294F7 /* libexpat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FD088E091182263A00B294F7 /* libexpat.dylib */; };
+		FD088E27118234F000B294F7 /* libaprutil-1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FD088E26118234F000B294F7 /* libaprutil-1.dylib */; };
+		FD4DEA1D11A725BA00F9FA7E /* llsdserialize_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD4DEA1C11A725BA00F9FA7E /* llsdserialize_tests.cpp */; };
+		FDDDDBC511AC944000046068 /* llsdserialize_binary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDDDDBC411AC944000046068 /* llsdserialize_binary.cpp */; };
+		FDDDDBC711AC945100046068 /* llsdserialize_notation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDDDDBC611AC945100046068 /* llsdserialize_notation.cpp */; };
+		FDDDDBCA11AC946B00046068 /* llsdserialize_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDDDDBC911AC946B00046068 /* llsdserialize_impl.cpp */; };
+		FDDDDCEE11AF384200046068 /* stub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDDDDCED11AF384200046068 /* stub.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76F690486A84900D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		033DB96D11CB0D7700F919AD /* llsdserialize_json.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = llsdserialize_json.cpp; sourceTree = "<group>"; };
+		FD088D8411821F5C00B294F7 /* llidl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = llidl.cpp; sourceTree = "<group>"; };
+		FD088D8511821F5C00B294F7 /* llidl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = llidl.h; sourceTree = "<group>"; };
+		FD088D8711821F5C00B294F7 /* preprocessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = preprocessor.h; sourceTree = "<group>"; };
+		FD088D8A11821F5C00B294F7 /* llsd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = llsd.cpp; sourceTree = "<group>"; };
+		FD088D8B11821F5C00B294F7 /* llsd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = llsd.h; sourceTree = "<group>"; };
+		FD088D8D11821F5C00B294F7 /* llsdserialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = llsdserialize.h; sourceTree = "<group>"; };
+		FD088D8E11821F5C00B294F7 /* llsdserialize_xml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = llsdserialize_xml.cpp; sourceTree = "<group>"; };
+		FD088D9411821F5C00B294F7 /* stdtypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdtypes.h; sourceTree = "<group>"; };
+		FD088D9611821F5C00B294F7 /* llidl_tests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = llidl_tests.cpp; sourceTree = "<group>"; };
+		FD088D9711821F5C00B294F7 /* llsd_tests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = llsd_tests.cpp; sourceTree = "<group>"; };
+		FD088D9811821F5C00B294F7 /* llsdtraits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = llsdtraits.h; sourceTree = "<group>"; };
+		FD088D9A11821F5C00B294F7 /* lltut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lltut.cpp; sourceTree = "<group>"; };
+		FD088D9B11821F5C00B294F7 /* lltut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lltut.h; sourceTree = "<group>"; };
+		FD088D9C11821F5C00B294F7 /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
+		FD088DA011821F5D00B294F7 /* tut.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tut.hpp; sourceTree = "<group>"; };
+		FD088DA111821F5D00B294F7 /* tut_assert.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tut_assert.hpp; sourceTree = "<group>"; };
+		FD088DA211821F5D00B294F7 /* tut_exception.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tut_exception.hpp; sourceTree = "<group>"; };
+		FD088DA311821F5D00B294F7 /* tut_posix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tut_posix.hpp; sourceTree = "<group>"; };
+		FD088DA411821F5D00B294F7 /* tut_reporter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tut_reporter.hpp; sourceTree = "<group>"; };
+		FD088DA511821F5D00B294F7 /* tut_restartable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tut_restartable.hpp; sourceTree = "<group>"; };
+		FD088DA611821F5D00B294F7 /* tut_result.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tut_result.hpp; sourceTree = "<group>"; };
+		FD088DA711821F5D00B294F7 /* tut_runner.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tut_runner.hpp; sourceTree = "<group>"; };
+		FD088DC8118220A900B294F7 /* libapr-1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libapr-1.dylib"; path = "usr/lib/libapr-1.dylib"; sourceTree = SDKROOT; };
+		FD088E091182263A00B294F7 /* libexpat.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libexpat.dylib; path = usr/lib/libexpat.dylib; sourceTree = SDKROOT; };
+		FD088E26118234F000B294F7 /* libaprutil-1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libaprutil-1.dylib"; path = "usr/lib/libaprutil-1.dylib"; sourceTree = SDKROOT; };
+		FD4DEA1C11A725BA00F9FA7E /* llsdserialize_tests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = llsdserialize_tests.cpp; sourceTree = "<group>"; };
+		FD539EEE11BD673E00CFABC6 /* TestLLSD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestLLSD; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDDDDBC411AC944000046068 /* llsdserialize_binary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = llsdserialize_binary.cpp; sourceTree = "<group>"; };
+		FDDDDBC611AC945100046068 /* llsdserialize_notation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = llsdserialize_notation.cpp; sourceTree = "<group>"; };
+		FDDDDBC811AC946B00046068 /* llsdserialize_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = llsdserialize_impl.h; sourceTree = "<group>"; };
+		FDDDDBC911AC946B00046068 /* llsdserialize_impl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = llsdserialize_impl.cpp; sourceTree = "<group>"; };
+		FDDDDCEC11AF384200046068 /* stub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stub.h; sourceTree = "<group>"; };
+		FDDDDCED11AF384200046068 /* stub.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stub.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F660486A84900D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD088DC9118220A900B294F7 /* libapr-1.dylib in Frameworks */,
+				FD088E0A1182263A00B294F7 /* libexpat.dylib in Frameworks */,
+				FD088E27118234F000B294F7 /* libaprutil-1.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* TestLLSD */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6859E8C029090F304C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+				FD088DC8118220A900B294F7 /* libapr-1.dylib */,
+				FD088E091182263A00B294F7 /* libexpat.dylib */,
+				FD088E26118234F000B294F7 /* libaprutil-1.dylib */,
+			);
+			name = TestLLSD;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				FD088D7A11821F5C00B294F7 /* indra */,
+				FD088D9D11821F5C00B294F7 /* libraries */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD539EEE11BD673E00CFABC6 /* TestLLSD */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6859E8C029090F304C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		FD088D7A11821F5C00B294F7 /* indra */ = {
+			isa = PBXGroup;
+			children = (
+				FD088D7B11821F5C00B294F7 /* llcommon */,
+				FD088D9911821F5C00B294F7 /* test */,
+			);
+			name = indra;
+			path = ../indra;
+			sourceTree = SOURCE_ROOT;
+		};
+		FD088D7B11821F5C00B294F7 /* llcommon */ = {
+			isa = PBXGroup;
+			children = (
+				FD088D8411821F5C00B294F7 /* llidl.cpp */,
+				FD088D8511821F5C00B294F7 /* llidl.h */,
+				FD088D8A11821F5C00B294F7 /* llsd.cpp */,
+				FD088D8B11821F5C00B294F7 /* llsd.h */,
+				FD088D8D11821F5C00B294F7 /* llsdserialize.h */,
+				FDDDDBC811AC946B00046068 /* llsdserialize_impl.h */,
+				FDDDDBC911AC946B00046068 /* llsdserialize_impl.cpp */,
+				FDDDDBC411AC944000046068 /* llsdserialize_binary.cpp */,
+				FDDDDBC611AC945100046068 /* llsdserialize_notation.cpp */,
+				FD088D8E11821F5C00B294F7 /* llsdserialize_xml.cpp */,
+				033DB96D11CB0D7700F919AD /* llsdserialize_json.cpp */,
+				FD088D8711821F5C00B294F7 /* preprocessor.h */,
+				FD088D9411821F5C00B294F7 /* stdtypes.h */,
+				FDDDDCEC11AF384200046068 /* stub.h */,
+				FDDDDCED11AF384200046068 /* stub.cpp */,
+				FD088D9511821F5C00B294F7 /* tests */,
+			);
+			path = llcommon;
+			sourceTree = "<group>";
+		};
+		FD088D9511821F5C00B294F7 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				FD088D9611821F5C00B294F7 /* llidl_tests.cpp */,
+				FD088D9711821F5C00B294F7 /* llsd_tests.cpp */,
+				FD4DEA1C11A725BA00F9FA7E /* llsdserialize_tests.cpp */,
+				FD088D9811821F5C00B294F7 /* llsdtraits.h */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		FD088D9911821F5C00B294F7 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				FD088D9A11821F5C00B294F7 /* lltut.cpp */,
+				FD088D9B11821F5C00B294F7 /* lltut.h */,
+				FD088D9C11821F5C00B294F7 /* test.cpp */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		FD088D9D11821F5C00B294F7 /* libraries */ = {
+			isa = PBXGroup;
+			children = (
+				FD088D9E11821F5C00B294F7 /* include */,
+			);
+			name = libraries;
+			path = ../libraries;
+			sourceTree = SOURCE_ROOT;
+		};
+		FD088D9E11821F5C00B294F7 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				FD088D9F11821F5C00B294F7 /* tut */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		FD088D9F11821F5C00B294F7 /* tut */ = {
+			isa = PBXGroup;
+			children = (
+				FD088DA011821F5D00B294F7 /* tut.hpp */,
+				FD088DA111821F5D00B294F7 /* tut_assert.hpp */,
+				FD088DA211821F5D00B294F7 /* tut_exception.hpp */,
+				FD088DA311821F5D00B294F7 /* tut_posix.hpp */,
+				FD088DA411821F5D00B294F7 /* tut_reporter.hpp */,
+				FD088DA511821F5D00B294F7 /* tut_restartable.hpp */,
+				FD088DA611821F5D00B294F7 /* tut_result.hpp */,
+				FD088DA711821F5D00B294F7 /* tut_runner.hpp */,
+			);
+			path = tut;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F620486A84900D96B5E /* TestLLSD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "TestLLSD" */;
+			buildPhases = (
+				8DD76F640486A84900D96B5E /* Sources */,
+				8DD76F660486A84900D96B5E /* Frameworks */,
+				8DD76F690486A84900D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestLLSD;
+			productInstallPath = "$(HOME)/bin";
+			productName = TestLLSD;
+			productReference = FD539EEE11BD673E00CFABC6 /* TestLLSD */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "TestLLSD" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* TestLLSD */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76F620486A84900D96B5E /* TestLLSD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F640486A84900D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD088DAA11821F5D00B294F7 /* llidl.cpp in Sources */,
+				FD088DAC11821F5D00B294F7 /* llsd.cpp in Sources */,
+				FD088DAE11821F5D00B294F7 /* llsdserialize_xml.cpp in Sources */,
+				FD088DB111821F5D00B294F7 /* llidl_tests.cpp in Sources */,
+				FD088DB211821F5D00B294F7 /* llsd_tests.cpp in Sources */,
+				FD088DB311821F5D00B294F7 /* lltut.cpp in Sources */,
+				FD088DB411821F5D00B294F7 /* test.cpp in Sources */,
+				FD4DEA1D11A725BA00F9FA7E /* llsdserialize_tests.cpp in Sources */,
+				FDDDDBC511AC944000046068 /* llsdserialize_binary.cpp in Sources */,
+				FDDDDBC711AC945100046068 /* llsdserialize_notation.cpp in Sources */,
+				FDDDDBCA11AC946B00046068 /* llsdserialize_impl.cpp in Sources */,
+				FDDDDCEE11AF384200046068 /* stub.cpp in Sources */,
+				033DB96E11CB0D7700F919AD /* llsdserialize_json.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB923208733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					"/usr/include/apr-1",
+					"$(SRCROOT)/../libraries/include",
+				);
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = TestLLSD;
+			};
+			name = Debug;
+		};
+		1DEB923308733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				HEADER_SEARCH_PATHS = (
+					"/usr/include/apr-1",
+					"$(SRCROOT)/../libraries/include",
+				);
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = TestLLSD;
+			};
+			name = Release;
+		};
+		1DEB923608733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = _POSIX_C_SOURCE;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB923708733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = _POSIX_C_SOURCE;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		FDED52AD11B6AE52002C78AF /* Legacy */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					LL_LEGACY,
+					_POSIX_C_SOURCE,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Legacy;
+		};
+		FDED52AE11B6AE52002C78AF /* Legacy */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				HEADER_SEARCH_PATHS = (
+					"/usr/include/apr-1",
+					"$(SRCROOT)/../libraries/include",
+				);
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = TestLLSD;
+			};
+			name = Legacy;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "TestLLSD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923208733DC60010E9CD /* Debug */,
+				1DEB923308733DC60010E9CD /* Release */,
+				FDED52AE11B6AE52002C78AF /* Legacy */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "TestLLSD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923608733DC60010E9CD /* Debug */,
+				1DEB923708733DC60010E9CD /* Release */,
+				FDED52AD11B6AE52002C78AF /* Legacy */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

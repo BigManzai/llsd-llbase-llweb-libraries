@@ -1,0 +1,27 @@
+
+== TODO ==
+
+[] The ABNF in http://tools.ietf.org/html/draft-hamrick-vwrap-type-system-00 is
+   patently incorrect (it excludes negative numbers, requires exponents, etc).
+   The library code implements a "best guess" at what values will be supported,
+   but it should be updated when the Internet Draft is revised.
+
+[] XML generation is done using string concatenation, with little regard for
+   encoding. A cross browser XML library should be included
+
+[] The Binary type implements toJSON() but assume the LLSD rules for
+   serialization discussed on the VWRAP mailing list (i.e. conversion to/from Base64
+   strings). As the Type System document evolves, the implementation should track
+   this. This may make it desirable to remove toJSON() and rely on explicit
+   conversion in the JSON.stringify() call.
+
+[] The Binary data type API is very loosely based on the CommonJS proposals.
+   This provides a convenient API for string<->binary encodings (UTF-8, Base64).
+   If a standard Binary datatype is adopted by the ECMAScript community, it should
+   be used instead. See: http://wiki.commonjs.org/wiki/Binary
+
+[] The TypedArray data types are based on a Khronos Group draft specification
+   for typed arrays for WebGL. This provides a convenient API for binary
+   data packing/unpacking (e.g. octets<->IEEE754 floats). If the specification
+   is refined and/or adopted, it should be used instead. See:
+   https://cvs.khronos.org/svn/repos/registry/trunk/public/webgl/doc/spec/TypedArray-spec.html

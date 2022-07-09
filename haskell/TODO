@@ -1,0 +1,74 @@
+Things to do
+    type
+    isXxxxx tests (?)
+        these would allow the serializers to not have to include Internal
+    * has
+        name still feels unsettled: should it match get/set group
+        or should it match at/which group?
+        something is still awkward about paths
+    * see if required typing on "foo" ./ 1 can be eliminated
+
+    types
+        should re-export the common types it uses: UUID, UTCTime, URI
+
+
+    JSON
+        serialization
+        formatting
+    notation
+        serialization
+        formatting
+
+    show does something simpler than pretty,
+        but it is uglier and takes more code (!) -- nuke it?
+
+    * write doc
+        section paragraphs
+        better write ups for functions
+
+    project
+        review dependencies, especially version constraints
+
+
+    replace base64-string
+        should use something based on ByteString
+        should be RFC 4648 compliant (no internal newlines, shouldn't ignore)
+
+
+Things to test
+    see Data/LLSD/Test.hs
+
+Things to decide
+    are names SData / SPath / SSegment okay?
+    XML formatter has no support for
+        real value percision
+        pretty-printing
+        choosing to have an XML header or no
+    XML parser could use annotated nodes
+    expose conversion functions? publically? Internal only?
+        would be more obvious than the fromLLSD . toLLSD idiom...
+    either
+        base parsing formats on LLSD's constructors
+        -or-
+        base formatting on a public LLSD type system
+
+
+
+QUESTIONS
+---------
+    function naming: pretty vs. prettyLLSD
+        is this the same as design for qualified import or not?
+    naming classes and Types: SData, SSegment, SPath, LLSDPath, LLSDSegment...
+        is it okay to not expose these (other than SData)
+    hide the construtors or not?
+    is it normal to break up into many small files, exposing only some?
+    export everything in the top module? or let people import function sets?
+        if so, correct to design to be imported into same qualification, yes?
+    how important is Show/Read -- human readable? read . show == id?  haskell syntax?
+    LLSD isn't lazy in structure (no LLSD of infinite lists) because Data.Map isn't
+        should I worry about this?
+    why are there SO many character encoding packages?
+        utf8-string? text? ghc-6.12 built in?
+    common code formatting conventions?
+    LLSD binary should be based on ByteString or ByteString.Lazy?
+

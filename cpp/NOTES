@@ -1,0 +1,52 @@
+TO DO
+=====
+
+[] Update VS2008 and XCode projects with llsdserialize_json.cpp
+   - And validate that the code works
+
+[] clean up VS 2008 build
+	[] put APR and expat libs under solution dir
+	[] add readme for how to deal with external libs
+	[] set warning level to 4 and use preprocessor.h (?)
+
+[] reorganize source out indra/llcommon
+	
+[] tabs vs. spaces?
+
+[] check that endianess code still works (how?)
+	- only used for binary serialization of doubles
+	- there is no unit test for this
+
+[] bug in Notation parser's parse of UUIDs:
+	- tries to read 36 characters, but then passes whole buffer,
+	- no matter how many were actually read.
+
+[] remove APR dependence
+    [] base64 routines used in serialization
+    [] getopt in test.cpp
+
+[] use stdint.h rather than stdtypes.h (?)
+
+[] figure out a home for hexvalue - rather than have two copies of it
+
+[] clean up the insane use of memcpy in llsdserialize_tests.cpp
+
+[] serious clean up of LLParser and subclasses
+	- should hold stream as private var, and access only through members
+	- noteFailure shouldn't have to create a std::string all the time
+	- remove reset() - they can't be reset
+
+
+FUTURE FEATURES
+===============
+
+[] XML parsing should really use max_bytes (not that it ever did...)
+
+[] add MIME type negotiation support to llsdserialize
+    [] get it done with once and for all!
+
+[] thread safe code fixes:
+    [] notes about statics
+    [] no-ref count on undef values
+    [] box/unbox calls
+
