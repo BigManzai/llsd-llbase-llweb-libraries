@@ -17,7 +17,8 @@ DEPENDENCIES
 ============
 To run the unit tests, you need a copy of simpletest for PHP. It can be found
 here:
-    http://www.simpletest.org/
+    http://simpletest.sourceforge.net/
+    https://github.com/simpletest/simpletest
     
 If you just download the standard distribution and unpack it here, everything
 is set. If you have simpletest in another directory, simply fix up the path to
