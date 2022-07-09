@@ -42,6 +42,6 @@ deployed systems that use LLSD such as Second Life and OpenSim.
     - Josh & Mark
     
 (*) The Python version is currently distributed in a separate repository:
-    http://hg.secondlife.com/llbase/
+
 The intention is to eventually migrate it here.
 
