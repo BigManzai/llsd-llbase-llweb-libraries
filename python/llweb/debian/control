@@ -1,0 +1,19 @@
+Source: llweb
+Section: python
+Priority: optional
+Maintainer: Phoenix Linden <phoenix@secondlife.com>
+Build-Depends: debhelper (>= 5.0.42), python-all-dev, python-central (>= 0.5.12), python (>= 2.4.4-2)
+Standards-Version: 3.7.2.2
+XS-Python-Version: all
+Homepage: http://secondlife.com/phoenix_linden/llweb/
+
+Package: python-llweb
+Architecture: all
+Section: python
+Priority: optional
+Depends: ${python:Depends}, ${shlibs:Depends}, python-llbase
+Provides: ${python:Provides}
+Recommends:
+XB-Python-Version: ${python:Versions}
+Description: LLSD web infrastructure components
+ LLSD based web infrastructure components.

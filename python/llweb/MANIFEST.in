@@ -1,0 +1,7 @@
+recursive-include llweb *
+recursive-include tests *.py
+recursive-include doc *
+include INSTALL
+include Makefile
+include MANIFEST.in
+include setup.py setup.cfg

@@ -1,0 +1,23 @@
+llweb (0.1.3) unstable; urgency=medium
+
+  * Adding support for wheezy/jessie builds
+
+ -- Don Kjer <don@lindenlab.com>  Wed, 29 Jan 2014 18:55:32 +0000
+
+llweb (0.1.2) unstable; urgency=low
+
+  * Fixed unnecessary dependency on indra.
+
+ -- Lex Neva <lex@lindenlab.com>  Tue, 11 Oct 2011 18:29:34 +0000
+
+llweb (0.1.1) unstable; urgency=low
+
+  * Documentation ported to sphinx
+
+ -- Phoenix Linden <phoenix@lindenlab.com>  Wed,  16 Dec 2009 11:55:54 -0700
+
+llweb (0.1.0) unstable; urgency=low
+
+  * Initial release.
+
+ -- phoenix <phoenix@secondlife.com>  Tue, 07 Jul 2009 13:09:13 -0700
