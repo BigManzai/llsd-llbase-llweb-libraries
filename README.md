@@ -33,7 +33,7 @@ Each language has its own directory, and each has its own README file with
 details for building and using the code. All versions have unit tests.
 
 Questions regarding these libraries can be directed to Josh:
-    josh@lindenlab.com
+
 
 Linden Lab hopes that by releasing these open source, it will help facilitiate
 the development of LLSD, as well as ease interoperatibility with currently
