@@ -1,0 +1,8 @@
+Python LLSD Module
+------------------
+
+Linden Lab's Python implementation of LLSD is part of the public llbase module.
+It can be found here:
+
+    http://hg.secondlife.com/llbase/
+    

@@ -1,0 +1,38 @@
+PHP LLSD Library
+----------------
+    v1 - 2010-06-08 - Zero Linden (Mark Lentczner)
+
+ABOUT
+=====
+This library implements LLSD in PHP. It represents most LLSD types as their
+native PHP equivalent, but wraps UUID, URI, Date, and Binary in small
+classes. Arrays and Maps both use PHP's array type. On serialization, arrays
+become LLSD Arrays iff they have only contiguous numeric keys from 0, otherwise
+they become LLAD Maps.
+
+Only XML serialization is supported.
+
+
+DEPENDENCIES
+============
+To run the unit tests, you need a copy of simpletest for PHP. It can be found
+here:
+    http://www.simpletest.org/
+    
+If you just download the standard distribution and unpack it here, everything
+is set. If you have simpletest in another directory, simply fix up the path to
+it in this file:
+    index.php
+    
+
+RUNNING TESTS
+=============
+You can run the unit tests either on the command line, or from a browser.
+
+On the command line:
+    php index.php
+
+From a browser:
+Serve this directory from a web server. Then either browse to the base URL
+you gave it, or <base URL>/index.php.
+

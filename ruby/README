@@ -1,0 +1,41 @@
+Ruby LLSD library
+-----------------
+    v1 - 2010-06-09 - Joshua Linden (Joshua Bell)
+
+ABOUT
+=====
+This library implements LLSD in Ruby. It represents most LLSD types as their
+native Ruby equivalents:
+
+
+LLSD Type          Ruby Type
+------------------ ---------------
+Undefined          NilClass
+Boolean            TrueClass, FalseClass
+Integer            Integer, FixNum
+Real               Float
+String             String
+Date               Date, DateTime
+URI                String
+UUID               String
+Binary             String (base64 encoded)
+Array              Array
+Map                Hash
+
+Only XML serialization is supported.
+
+
+DEPENDENCIES
+============
+
+The following modules from the Ruby Stnadard Libray are required:
+* test/unit
+* rexml/document
+* date
+
+
+RUNNING TESTS
+=============
+You can run the unit tests on the command line:
+
+    ruby test/llsd_test.rb
