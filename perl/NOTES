@@ -1,0 +1,22 @@
+TO DO
+=====
+
+[] Check coverage of unit tests
+
+[] JSON serialization - use JSON module
+   ... or document use of it with LLSD::LLSD($data, [GUESS_TYPES])
+
+[] Consider use of URI module
+   At least: UNIVERSAL::isa($x, 'URI') in LLSD::type()
+
+[] Consider use of boolean
+   At least: UNIVERSAL::isa($x, 'boolean') in LLSD::type()
+
+[] Consider use of Data::UUID
+   At least: UNIVERSAL::isa($x, 'Data::UUID') in LLSD::type()
+
+[] Add Build.PL and the rest of the CPAN wrappage
+
+[] Use "$foo" instead of "" . $foo
+
+[] Implement LLIDL

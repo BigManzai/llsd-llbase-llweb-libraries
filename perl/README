@@ -1,0 +1,64 @@
+Perl LLSD Library
+----------------
+    v2 - 2010-09-22 - Joshua Linden (Joshua Bell)
+
+
+ABOUT
+=====
+This library implements the LLSD data type, and serialization forms in Perl.
+
+
+USAGE
+=====
+
+use LLSD;
+
+# Types
+
+my $map = { url => new LLSD::URI('http://example.com'),
+            values => [ new LLSD::Integer(1), new LLSD::Integer(2) ],
+            flag => LLSD::True };
+
+print new LLSD::Integer(1) + new LLSD::Integer(2); # -> 3
+
+
+# Conversion
+
+my $basic = LLSD($pod); # all scalars will be strings
+my $guess = LLSD($pod, 1); # Integer, Real, Date, and UUID are guessed
+
+
+# Serialization
+
+my $data = LLSD::parse_xml_file('myfile.bin');
+my $data = LLSD::parse_xml('<llsd><integer>123</integer></llsd>');
+my $xml = LLSD::format_xml($llsd);
+
+my $data = LLSD::parse_binary_file('myfile.bin');
+my $data = LLSD::parse_binary($binary_data);
+my $bin = LLSD::format_binary($llsd);
+
+
+# Object-Oriented Serialization
+
+my $serializer = new LLSD::XML({guess_types=>1});
+my $serializer = new LLSD::BinarySerializer({guess_types=>1});
+
+my $serialized = $serializer->format($llsd);
+my $llsd = $serializer->parse($serialized);
+my $llsd = $serializer->parsefile($filename);
+
+
+
+DEPENDENCIES
+============
+
+The following Perl modules are required. Earlier versions may work, these
+are just the minumum that the library has been tested with.
+
+ Date::Parse 2.27
+ Exporter 5.58
+ MIME::Base64 3.07
+ Scalar::Util 1.18
+ XML::DOM 1.43
+ overload 1.04
